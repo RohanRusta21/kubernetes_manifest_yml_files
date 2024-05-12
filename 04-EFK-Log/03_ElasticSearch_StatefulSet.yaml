@@ -74,11 +74,11 @@ spec:
         resources:
           # need more cpu upon initialization, therefore burstable class
           limits:
-            cpu: 500m
-            memory: 3Gi
-          requests:
-            cpu: 100m
+            cpu: 250m
             memory: 1Gi
+          requests:
+            cpu: 50m
+            memory: 512Mi
         ports:
         - containerPort: 9200
           name: db
